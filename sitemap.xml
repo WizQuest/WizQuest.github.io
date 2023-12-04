@@ -2,142 +2,142 @@
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-	<loc>https://www.techcret.com/</loc>
+	<loc>https://www.wizquest.io/</loc>
 	<lastmod>2019-09-05T10:41:58+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/index.html</loc>
+	<loc>https://www.wizquest.io/index.html</loc>
 	<lastmod>2019-09-05T10:41:58+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/full-tech.html</loc>
+	<loc>https://www.wizquest.io/full-tech.html</loc>
 	<lastmod>2019-09-05T10:42:01+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/backend.html</loc>
+	<loc>https://www.wizquest.io/backend.html</loc>
 	<lastmod>2019-09-05T10:42:01+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/frontend.html</loc>
+	<loc>https://www.wizquest.io/frontend.html</loc>
 	<lastmod>2019-09-05T10:42:01+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/dev-ops.html</loc>
+	<loc>https://www.wizquest.io/dev-ops.html</loc>
 	<lastmod>2019-09-05T10:42:01+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/mobility.html</loc>
+	<loc>https://www.wizquest.io/mobility.html</loc>
 	<lastmod>2019-09-05T10:42:02+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/grails.html</loc>
+	<loc>https://www.wizquest.io/grails.html</loc>
 	<lastmod>2019-09-05T10:42:02+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/springBoot.html</loc>
+	<loc>https://www.wizquest.io/springBoot.html</loc>
 	<lastmod>2019-09-05T10:42:02+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/springCloud.html</loc>
+	<loc>https://www.wizquest.io/springCloud.html</loc>
 	<lastmod>2019-09-05T10:42:05+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/micronaut.html</loc>
+	<loc>https://www.wizquest.io/micronaut.html</loc>
 	<lastmod>2019-09-05T10:42:02+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/jvm.html</loc>
+	<loc>https://www.wizquest.io/jvm.html</loc>
 	<lastmod>2019-09-05T10:42:02+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/data.html</loc>
+	<loc>https://www.wizquest.io/data.html</loc>
 	<lastmod>2019-09-05T10:42:02+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/react.html</loc>
+	<loc>https://www.wizquest.io/react.html</loc>
 	<lastmod>2019-09-05T10:42:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/typescript.html</loc>
+	<loc>https://www.wizquest.io/typescript.html</loc>
 	<lastmod>2019-09-05T10:42:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/javascript-es6.html</loc>
+	<loc>https://www.wizquest.io/javascript-es6.html</loc>
 	<lastmod>2019-09-05T10:42:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/paas.html</loc>
+	<loc>https://www.wizquest.io/paas.html</loc>
 	<lastmod>2019-09-05T10:42:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/docker.html</loc>
+	<loc>https://www.wizquest.io/docker.html</loc>
 	<lastmod>2019-09-05T10:42:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/k8s.html</loc>
+	<loc>https://www.wizquest.io/k8s.html</loc>
 	<lastmod>2019-09-05T10:42:04+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/reactNative.html</loc>
+	<loc>https://www.wizquest.io/reactNative.html</loc>
 	<lastmod>2019-09-05T10:42:04+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/amqp.html</loc>
+	<loc>https://www.wizquest.io/amqp.html</loc>
 	<lastmod>2019-09-05T10:42:04+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/redis.html</loc>
+	<loc>https://www.wizquest.io/redis.html</loc>
 	<lastmod>2019-09-05T10:42:04+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/mysql.html</loc>
+	<loc>https://www.wizquest.io/mysql.html</loc>
 	<lastmod>2019-09-05T10:42:04+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/mongoDb.html</loc>
+	<loc>https://www.wizquest.io/mongoDb.html</loc>
 	<lastmod>2019-09-05T10:42:04+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/hazelcast.html</loc>
+	<loc>https://www.wizquest.io/hazelcast.html</loc>
 	<lastmod>2019-09-05T10:42:05+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/about.html</loc>
+	<loc>https://www.wizquest.io/about.html</loc>
 	<lastmod>2019-09-05T10:42:05+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/contact.html</loc>
+	<loc>https://www.wizquest.io/contact.html</loc>
 	<lastmod>2019-09-05T10:42:05+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://www.techcret.com/service-detail.html</loc>
+	<loc>https://www.wizquest.io/service-detail.html</loc>
 	<lastmod>2019-09-05T10:42:05+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
