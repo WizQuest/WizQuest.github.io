@@ -1,527 +1,1856 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>WizQuest Lab</title>
-    <!-- Stylesheets -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link href="css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+  <!-- ═══ PRIMARY SEO META ═══ -->
+  <title>WizQuest Lab | AI Development, IT Services & System Integration – Delhi, India</title>
+  <meta name="description" content="WizQuest Lab – Delhi's premier IT services company specialising in AI development, custom chatbots, LLM-powered apps, Java, MEAN/MERN stack, React, Spring Boot, DevOps, mobile apps, Keka HR integration, Zoho CRM & Zoho HR integration, WordPress, and more. One provider. All services." />
+  <meta name="keywords" content="AI development company Delhi, custom AI chatbot development India, LLM development, machine learning company India, best IT company Delhi, Java development company India, MEAN stack development, MERN stack development, React development, Spring Boot development, DevOps AWS Kubernetes, mobile app development React Native, Keka HR integration, Zoho CRM integration, Zoho HR integration, WordPress development, system integration India, software development company Delhi, IT consulting Delhi NCR, custom software development India, cloud solutions AWS Azure GCP, WizQuest Lab, chatbot development, generative AI solutions, AI consulting India, best technology company Delhi NCR" />
+  <meta name="author" content="WizQuest Lab" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://wizquest.io/" />
+
+  <!-- ═══ OPEN GRAPH / SOCIAL ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wizquest.io/" />
+  <meta property="og:title" content="WizQuest Lab | AI & IT Services Company – Delhi, India" />
+  <meta property="og:description" content="From AI chatbots to custom LLMs, Java to MERN, DevOps to system integrations — WizQuest Lab delivers cutting-edge technology solutions from Delhi, India." />
+  <meta property="og:image" content="https://wizquest.io/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WizQuest Lab | AI & IT Services – Delhi" />
+  <meta name="twitter:description" content="Custom AI, software development, and system integrations from Delhi's top IT company." />
+
+  <!-- ═══ STRUCTURED DATA – LOCAL BUSINESS ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ITService",
+    "name": "WizQuest Lab",
+    "url": "https://wizquest.io",
+    "logo": "https://wizquest.io/logo.png",
+    "description": "WizQuest Lab is a premier IT services company in Delhi, India, specialising in AI development, custom software, system integration, cloud infrastructure, and enterprise technology solutions.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Delhi",
+      "addressLocality": "Delhi",
+      "addressRegion": "Delhi",
+      "postalCode": "110001",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 28.6139,
+      "longitude": 77.2090
+    },
+    "email": "contact@wizquest.io",
+    "areaServed": ["IN","US","GB","AU","SG"],
+    "serviceType": ["AI Development","Custom Chatbots","LLM Development","Java Development","MEAN Stack","MERN Stack","React Development","Spring Boot","DevOps","Keka HR Integration","Zoho CRM Integration","Zoho HR Integration","WordPress Development","Mobile App Development","System Integration"],
+    "sameAs": [
+      "https://github.com/WizQuest"
+    ]
+  }
+  </script>
+
+  <!-- ═══ FONTS ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- ═══ ICONS ═══ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ═══════════════════════════════════════════
+       ROOT TOKENS
+    ═══════════════════════════════════════════ */
+    :root {
+      --bg:        #050B18;
+      --bg2:       #080F20;
+      --bg3:       #0B1428;
+      --card:      #0E1A35;
+      --card2:     #111E3A;
+      --border:    rgba(255,255,255,0.07);
+      --accent:    #00C8FF;
+      --accent2:   #7B5EA7;
+      --accent3:   #00FFB2;
+      --text:      #E8EDF6;
+      --muted:     #7A8BAA;
+      --white:     #FFFFFF;
+      --font-head: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --radius:    14px;
+      --radius-sm: 8px;
+      --shadow:    0 8px 40px rgba(0,200,255,0.08);
+      --glow:      0 0 60px rgba(0,200,255,0.15);
+    }
+
+    /* ═══════════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+    section { position: relative; }
+
+    /* ═══════════════════════════════════════════
+       TYPOGRAPHY
+    ═══════════════════════════════════════════ */
+    h1,h2,h3,h4,h5 { font-family: var(--font-head); font-weight: 700; line-height: 1.2; }
+    .label {
+      display: inline-block;
+      font-family: var(--font-head);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(0,200,255,0.08);
+      border: 1px solid rgba(0,200,255,0.2);
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 18px;
+    }
+    .section-title {
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 620px;
+      line-height: 1.75;
+    }
+    .section-head { margin-bottom: 60px; }
+    .text-center { text-align: center; }
+    .text-center .section-sub { margin: 0 auto; }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--accent), var(--accent3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ═══════════════════════════════════════════
+       LAYOUT
+    ═══════════════════════════════════════════ */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .section-pad { padding: 100px 0; }
+    .section-pad-sm { padding: 70px 0; }
+
+    /* ═══════════════════════════════════════════
+       BUTTONS
+    ═══════════════════════════════════════════ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      border-radius: 100px;
+      font-family: var(--font-head);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), #0096CC);
+      color: #000;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,200,255,0.35); }
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid rgba(0,200,255,0.4);
+      color: var(--accent);
+    }
+    .btn-outline:hover { background: rgba(0,200,255,0.08); border-color: var(--accent); }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      padding: 13px 0;
+    }
+    .btn-ghost:hover { color: var(--accent); }
+    .btn i { font-size: 0.85em; }
+
+    /* ═══════════════════════════════════════════
+       NAVIGATION
+    ═══════════════════════════════════════════ */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 18px 0;
+      transition: all 0.4s ease;
+    }
+    #navbar.scrolled {
+      background: rgba(5,11,24,0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: var(--font-head);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--white);
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .nav-links a {
+      font-family: var(--font-head);
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--muted);
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+    .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.05); }
+    .nav-links .btn-primary { color: #000; padding: 9px 22px; margin-left: 10px; }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 6px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--bg2);
+      z-index: 999;
+      padding: 100px 30px 40px;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      font-family: var(--font-head);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--muted);
+      padding: 14px 16px;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s;
+    }
+    .mobile-nav a:hover { color: var(--white); background: rgba(255,255,255,0.04); }
+    .mobile-nav .btn-primary { text-align: center; color: #000; margin-top: 20px; padding: 15px; border-radius: var(--radius); }
+
+    /* ═══════════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════════ */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 140px 0 80px;
+      overflow: hidden;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,200,255,0.07) 0%, transparent 60%),
+                  radial-gradient(ellipse 50% 40% at 80% 50%, rgba(123,94,167,0.06) 0%, transparent 50%),
+                  var(--bg);
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0,200,255,0.06);
+      border: 1px solid rgba(0,200,255,0.18);
+      border-radius: 100px;
+      padding: 7px 16px 7px 10px;
+      font-size: 0.82rem;
+      color: var(--accent);
+      font-family: var(--font-head);
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    .hero-badge .dot {
+      width: 8px; height: 8px;
+      background: var(--accent3);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+    .hero-title {
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 50px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+    .hero-stat-num {
+      font-family: var(--font-head);
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: var(--white);
+    }
+    .hero-stat-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .hero-visual {
+      position: relative;
+    }
+    .hero-card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .hero-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      transition: all 0.3s;
+    }
+    .hero-card:hover { border-color: rgba(0,200,255,0.25); transform: translateY(-3px); }
+    .hero-card:first-child { grid-column: 1/-1; background: linear-gradient(135deg, rgba(0,200,255,0.07), rgba(123,94,167,0.06)); border-color: rgba(0,200,255,0.15); }
+    .hero-card-icon { font-size: 1.5rem; margin-bottom: 10px; }
+    .hero-card-title { font-family: var(--font-head); font-size: 0.9rem; font-weight: 600; color: var(--white); margin-bottom: 5px; }
+    .hero-card-sub { font-size: 0.78rem; color: var(--muted); }
+    .floating-tag {
+      position: absolute;
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 6px 14px;
+      font-size: 0.75rem;
+      font-family: var(--font-head);
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .tag-1 { top: -20px; right: 20px; animation-delay: 0s; border-color: rgba(0,200,255,0.2); color: var(--accent); }
+    .tag-2 { bottom: 10px; left: -10px; animation-delay: 1s; }
+    .tag-3 { top: 40%; right: -20px; animation-delay: 1.8s; border-color: rgba(0,255,178,0.2); color: var(--accent3); }
+
+    /* ═══════════════════════════════════════════
+       TRUST BAR
+    ═══════════════════════════════════════════ */
+    #trust {
+      padding: 28px 0;
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .trust-inner {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      white-space: nowrap;
+      animation: marquee 28s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-head);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+    .trust-item i { color: var(--accent); font-size: 0.9rem; }
+
+    /* ═══════════════════════════════════════════
+       SERVICES
+    ═══════════════════════════════════════════ */
+    #services {
+      background: var(--bg2);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .service-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: all 0.35s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--accent-color, var(--accent)), transparent);
+      opacity: 0;
+      transition: opacity 0.35s;
+    }
+    .service-card:hover { border-color: rgba(0,200,255,0.2); transform: translateY(-4px); box-shadow: var(--shadow); }
+    .service-card:hover::before { opacity: 1; }
+    .service-icon {
+      width: 54px; height: 54px;
+      background: rgba(0,200,255,0.08);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      color: var(--accent);
+      transition: all 0.3s;
+    }
+    .service-card:hover .service-icon { background: rgba(0,200,255,0.14); transform: scale(1.05); }
+    .service-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .service-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 18px;
+    }
+    .stag {
+      font-size: 0.7rem;
+      font-family: var(--font-head);
+      font-weight: 600;
+      padding: 3px 10px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      color: var(--muted);
+    }
+
+    /* ═══════════════════════════════════════════
+       AI SERVICES
+    ═══════════════════════════════════════════ */
+    #ai {
+      background: var(--bg);
+      overflow: hidden;
+    }
+    .ai-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .ai-feature-list { display: flex; flex-direction: column; gap: 16px; margin-top: 36px; }
+    .ai-feat {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: all 0.3s;
+    }
+    .ai-feat:hover { border-color: rgba(0,200,255,0.2); }
+    .ai-feat-icon {
+      width: 44px; height: 44px;
+      flex-shrink: 0;
+      background: linear-gradient(135deg, rgba(0,200,255,0.12), rgba(0,150,180,0.06));
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+    .ai-feat h4 { font-size: 0.95rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .ai-feat p { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+    .ai-cards-right { display: flex; flex-direction: column; gap: 14px; }
+    .ai-big-card {
+      background: linear-gradient(135deg, rgba(0,200,255,0.06), rgba(123,94,167,0.06));
+      border: 1px solid rgba(0,200,255,0.14);
+      border-radius: var(--radius);
+      padding: 32px;
+    }
+    .ai-big-card h3 { font-size: 1.3rem; color: var(--white); margin-bottom: 10px; }
+    .ai-big-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+    .ai-mini-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .ai-mini {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      transition: all 0.3s;
+    }
+    .ai-mini:hover { border-color: rgba(0,255,178,0.2); }
+    .ai-mini-icon { font-size: 1.6rem; margin-bottom: 12px; }
+    .ai-mini h4 { font-size: 0.88rem; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+    .ai-mini p { font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
+
+    /* ═══════════════════════════════════════════
+       TECH STACK
+    ═══════════════════════════════════════════ */
+    #tech { background: var(--bg2); }
+    .tech-tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .tech-tab {
+      padding: 9px 20px;
+      border-radius: 100px;
+      font-family: var(--font-head);
+      font-size: 0.82rem;
+      font-weight: 600;
+      border: 1.5px solid var(--border);
+      color: var(--muted);
+      cursor: pointer;
+      background: transparent;
+      transition: all 0.25s;
+    }
+    .tech-tab.active, .tech-tab:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(0,200,255,0.06);
+    }
+    .tech-panel { display: none; }
+    .tech-panel.active { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .tech-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: all 0.3s;
+      cursor: default;
+    }
+    .tech-item:hover { border-color: rgba(0,200,255,0.2); transform: translateY(-2px); }
+    .tech-item i { font-size: 1.4rem; color: var(--accent); flex-shrink: 0; }
+    .tech-name { font-family: var(--font-head); font-size: 0.85rem; font-weight: 600; color: var(--text); }
+    .tech-category { font-size: 0.72rem; color: var(--muted); }
+
+    /* ═══════════════════════════════════════════
+       INTEGRATIONS
+    ═══════════════════════════════════════════ */
+    #integrations { background: var(--bg); }
+    .integrations-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-bottom: 70px;
+    }
+    .integration-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .int-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 26px;
+      transition: all 0.3s;
+    }
+    .int-card:hover { border-color: rgba(123,94,167,0.3); transform: translateY(-3px); box-shadow: 0 8px 30px rgba(123,94,167,0.1); }
+    .int-logo {
+      width: 48px; height: 48px;
+      border-radius: var(--radius-sm);
+      background: rgba(123,94,167,0.1);
+      border: 1px solid rgba(123,94,167,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+      color: var(--accent2);
+    }
+    .int-card h4 { font-size: 0.92rem; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+    .int-card p { font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
+    .int-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-family: var(--font-head);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 2px 8px;
+      border-radius: 100px;
+      background: rgba(0,255,178,0.1);
+      color: var(--accent3);
+      border: 1px solid rgba(0,255,178,0.2);
+      margin-top: 10px;
+    }
+
+    /* ═══════════════════════════════════════════
+       PROCESS
+    ═══════════════════════════════════════════ */
+    #process { background: var(--bg2); }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 36px; left: 10%; right: 10%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), var(--border), transparent);
+    }
+    .process-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 12px;
+      position: relative;
+    }
+    .step-num {
+      width: 72px; height: 72px;
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-head);
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+      transition: all 0.3s;
+    }
+    .process-step:hover .step-num { background: rgba(0,200,255,0.1); border-color: var(--accent); box-shadow: 0 0 20px rgba(0,200,255,0.2); }
+    .process-step h4 { font-size: 0.9rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .process-step p { font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
+
+    /* ═══════════════════════════════════════════
+       WHY US
+    ═══════════════════════════════════════════ */
+    #why { background: var(--bg); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .why-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      transition: all 0.3s;
+    }
+    .why-card:hover { border-color: rgba(0,200,255,0.2); }
+    .why-num {
+      font-family: var(--font-head);
+      font-size: 2.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), var(--accent3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .why-card h4 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .why-card p { font-size: 0.84rem; color: var(--muted); line-height: 1.7; }
+
+    /* ═══════════════════════════════════════════
+       TESTIMONIALS
+    ═══════════════════════════════════════════ */
+    #testimonials { background: var(--bg2); }
+    .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .testi-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+    }
+    .testi-stars { color: #FFD700; font-size: 0.85rem; margin-bottom: 14px; }
+    .testi-text { font-size: 0.88rem; color: var(--muted); line-height: 1.75; margin-bottom: 20px; font-style: italic; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-head);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+    .testi-name { font-family: var(--font-head); font-size: 0.88rem; font-weight: 700; color: var(--white); }
+    .testi-role { font-size: 0.75rem; color: var(--muted); }
+
+    /* ═══════════════════════════════════════════
+       CTA BANNER
+    ═══════════════════════════════════════════ */
+    #cta-banner {
+      background: linear-gradient(135deg, rgba(0,200,255,0.08), rgba(123,94,167,0.08));
+      border-top: 1px solid rgba(0,200,255,0.1);
+      border-bottom: 1px solid rgba(0,200,255,0.1);
+      padding: 80px 0;
+    }
+    .cta-inner { text-align: center; }
+    .cta-inner h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--white); margin-bottom: 16px; }
+    .cta-inner p { font-size: 1.05rem; color: var(--muted); margin-bottom: 36px; }
+    .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ═══════════════════════════════════════════
+       CONTACT
+    ═══════════════════════════════════════════ */
+    #contact { background: var(--bg); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .contact-info { }
+    .contact-detail {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 28px;
+      padding: 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .contact-detail-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: rgba(0,200,255,0.08);
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+    .contact-detail h4 { font-size: 0.85rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .contact-detail p, .contact-detail a { font-size: 0.85rem; color: var(--muted); transition: color 0.2s; }
+    .contact-detail a:hover { color: var(--accent); }
+    .contact-form-wrap {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label {
+      display: block;
+      font-family: var(--font-head);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: var(--bg2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 13px 16px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.25s, box-shadow 0.25s;
+      -webkit-appearance: none;
+    }
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%237A8BAA' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+    .form-group select option { background: var(--bg2); }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--muted); opacity: 0.6; }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(0,200,255,0.08);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-submit { width: 100%; padding: 15px; font-size: 0.95rem; border-radius: var(--radius-sm); }
+    .form-message {
+      display: none;
+      padding: 14px 18px;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      margin-top: 14px;
+    }
+    .form-message.success { background: rgba(0,255,178,0.08); border: 1px solid rgba(0,255,178,0.2); color: var(--accent3); }
+    .form-message.error { background: rgba(255,80,80,0.08); border: 1px solid rgba(255,80,80,0.2); color: #FF5050; }
+
+    /* ═══════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════ */
+    footer {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      padding: 70px 0 30px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 60px;
+    }
+    .footer-brand .nav-logo { font-size: 1.4rem; margin-bottom: 14px; display: block; }
+    .footer-brand p { font-size: 0.85rem; color: var(--muted); line-height: 1.75; margin-bottom: 20px; }
+    .footer-social { display: flex; gap: 10px; }
+    .footer-social a {
+      width: 38px; height: 38px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      transition: all 0.25s;
+    }
+    .footer-social a:hover { color: var(--accent); border-color: rgba(0,200,255,0.3); background: rgba(0,200,255,0.06); }
+    .footer-col h5 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--white);
+      margin-bottom: 18px;
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a {
+      font-size: 0.85rem;
+      color: var(--muted);
+      transition: color 0.2s;
+    }
+    .footer-col ul li a:hover { color: var(--accent); }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .footer-bottom p { font-size: 0.82rem; color: var(--muted); }
+    .footer-bottom-links { display: flex; gap: 24px; }
+    .footer-bottom-links a { font-size: 0.82rem; color: var(--muted); transition: color 0.2s; }
+    .footer-bottom-links a:hover { color: var(--accent); }
+
+    /* ═══════════════════════════════════════════
+       SCROLL TO TOP
+    ═══════════════════════════════════════════ */
+    #scrollTop {
+      position: fixed;
+      bottom: 30px; right: 30px;
+      width: 46px; height: 46px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: #000;
+      font-size: 1rem;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s;
+      z-index: 500;
+      box-shadow: 0 4px 20px rgba(0,200,255,0.3);
+    }
+    #scrollTop.visible { opacity: 1; pointer-events: all; }
+    #scrollTop:hover { transform: translateY(-3px); }
+
+    /* ═══════════════════════════════════════════
+       FADE-IN ANIMATIONS
+    ═══════════════════════════════════════════ */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .fade-in-delay-1 { transition-delay: 0.1s; }
+    .fade-in-delay-2 { transition-delay: 0.2s; }
+    .fade-in-delay-3 { transition-delay: 0.3s; }
+    .fade-in-delay-4 { transition-delay: 0.4s; }
+    .fade-in-delay-5 { transition-delay: 0.5s; }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .ai-grid { grid-template-columns: 1fr; }
+      .ai-cards-right { order: -1; }
+      .ai-mini-grid { grid-template-columns: repeat(3, 1fr); }
+      .integrations-intro { grid-template-columns: 1fr; gap: 40px; }
+      .tech-panel.active { grid-template-columns: repeat(3, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+      .footer-brand { grid-column: 1/-1; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .hero-stats { gap: 20px; flex-wrap: wrap; }
+      .services-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr; }
+      .process-steps::before { display: none; }
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .testi-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .integration-grid { grid-template-columns: 1fr 1fr; }
+      .tech-panel.active { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .section-pad { padding: 70px 0; }
+      .ai-mini-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .why-grid { grid-template-columns: 1fr; }
+      .integration-grid { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .cta-actions { flex-direction: column; align-items: center; }
+      .ai-mini-grid { grid-template-columns: 1fr; }
+      .tech-panel.active { grid-template-columns: 1fr; }
+      .contact-form-wrap { padding: 24px; }
+    }
+
+    /* Noise texture overlay */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      opacity: 0.4;
+      z-index: 9999;
+    }
+  </style>
+</head>
 <body>
 
-    <div class="page-wrapper">
-
-        <!-- Preloader -->
-        <div class="preloader"></div>
-
-        <!-- Main Header-->
-        <header class="main-header alternate">
-
-            <!-- Main Box -->
-            <div class="main-box">
-                <div class="auto-container">
-                    <div class="outer-container clearfix">
-                        <!--Logo Box-->
-                        <div class="logo-box">
-                            <div class="logo"><a href="index.html"><img src="images/Auflora-cropped.png" alt=""></a>
-                            </div>
-                        </div>
-
-                        <!--Nav Outer-->
-                        <div class="nav-outer clearfix">
-                            <!-- Main Menu -->
-                            <nav class="main-menu">
-                                <div class="navbar-collapse collapse scroll-nav clearfix">
-                                    <ul class="navigation clearfix">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li class="dropdown"><a href="full-tech.html">Solutions</a>
-                                            <ul>
-                                                <li><a href="backend.html">Backend Development</a></li>
-                                                <li><a href="frontend.html">Frontend Development</a></li>
-                                                <li><a href="dev-ops.html">Dev-Ops Development</a></li>
-                                                <li><a href="mobility.html">Mobility</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="full-tech.html">Technologies</a>
-                                            <ul>
-                                                <li class="dropdown"><a href="backend.html">Backend Development</a>
-                                                    <ul>
-                                                        <li><a href="grails.html">Grails</a></li>
-                                                        <li><a href="springBoot.html">Spring Boot</a></li>
-                                                        <li><a href="springCloud.html">Spring Cloud</a></li>
-                                                        <li><a href="micronaut.html">Micronaut</a></li>
-                                                        <li><a href="jvm.html">JVM Languages (Java/Groovy/Kotlin)</a>
-                                                        </li>
-                                                        <li><a href="data.html">Hibernate/JPA/Gorm/Spring Data/Micronaut
-                                                                Data</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"><a href="javascript:void(0)">Forntend
-                                                        Technologies</a>
-                                                    <ul>
-                                                        <li><a href="react.html">React</a></li>
-                                                        <li><a href="typescript.html">TypeScript</a></li>
-                                                        <li><a href="javascript-es6.html">JavaScript/ES6</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"><a href="javascript:void(0)">Dev-Ops
-                                                        Technologies</a>
-                                                    <ul>
-                                                        <li><a href="paas.html">Platform as a Service</a></li>
-                                                        <li><a href="docker.html">Docker</a></li>
-                                                        <li><a href="k8s.html">Kubernetes</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"><a href="javascript:void(0)">Mobility</a>
-                                                    <ul>
-                                                        <li><a href="reactNative.html">React Native</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"><a href="javascript:void(0)">Supporting
-                                                        Technologies</a>
-                                                    <ul>
-                                                        <li><a href="amqp.html">RabbitMQ/Apache Kafka</a></li>
-                                                        <li><a href="redis.html">Redis</a></li>
-                                                        <li><a href="mysql.html">MySQL</a></li>
-                                                        <li><a href="mongoDb.html">MongoDB</a></li>
-                                                        <li><a href="hazelcast.html">HazelCast</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                        <!-- <li><a href="https://medium.com/techcret" target="_blank">Blog</a></li> -->
-                                    </ul>
-                                </div>
-
-                            </nav>
-                            <!-- Main Menu End-->
-
-                            <!--Other Links-->
-                            <!-- <div class="other-links">
-                        	<a href="contact.html" class="theme-btn btn-style-one">Get Quote</a>
-                        </div> -->
-
-                        </div>
-                        <!--Nav Outer End-->
-
-                    </div>
-                </div>
-            </div>
-
-        </header>
-        <!--End Main Header -->
-
-
-        <!--Main Banner / Banner Two-->
-        <section class="main-banner banner-two" id="banner"
-            style="background-image:url(images/background/banner-bg-2.png);">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <!--Text Column-->
-                    <div class="text-column col-md-5 col-sm-12 col-xs-12">
-                        <div class="inner">
-                            <h4>One Provider. All Services.</h4>
-                            <h2>Simple solutions for complex problems.</h2>
-                            <p>Use our technical expertise to build award winning products with the blend of cutting
-                                edge technologies!</p>
-                            <!-- <a href="https://www.youtube.com/watch?v=aJFK9k5i1ew" class="theme-btn btn-style-three lightbox-image" title="Image Caption Here">Watch about video <span class="icon ti-control-play"></span></a> -->
-                        </div>
-                    </div>
-
-                    <!--Image Column-->
-                    <div class="image-column col-md-7 col-sm-12 col-xs-12">
-                        <div class="inner text-right">
-                            <figure class="image"><img src="images/resource/banner-image-1.png" alt=""></figure>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!--End Main Banner-->
-
-
-        <!--Features Section Two-->
-        <section class="features-section-two" id="features">
-            <div class="auto-container">
-                <div class="features-container clearfix">
-                    <div class="row clearfix">
-                        <!--Text Column-->
-                        <div class="text-column col-md-4 col-sm-12 col-xs-12">
-                            <div class="inner">
-                                <h2>What we offer?</h2>
-                                <div class="text">We provide end to end solution for all of your complex business
-                                    challenges and requirements.</div>
-                                <div class="more-link-one"><a href="full-tech.html" class="theme-btn">See more <span
-                                            class="fa fa-arrow-right"></span></a></div>
-                            </div>
-                        </div>
-
-                        <!--Features Column-->
-                        <div class="features-column col-md-8 col-sm-12 col-xs-12">
-                            <div class="inner">
-                                <div class="row clearfix">
-                                    <!--Feature Block-->
-                                    <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
-                                        <div class="inner-box">
-                                            <div class="icon">
-                                                <figure class="image"><img src="images/icons/backend-128-logo.png"
-                                                        alt="Backend Development">
-                                                </figure>
-                                            </div>
-                                            <h3><a href="service-detail.html">Backend Development</a></h3>
-                                            <div class="text">Robust & Reliable solutions for any kind of Backend
-                                                Platform.</div>
-                                        </div>
-                                    </div>
-                                    <!--Feature Block-->
-                                    <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
-                                        <div class="inner-box">
-                                            <div class="icon">
-                                                <figure class="image"><img src="images/icons/frontend-128-logo.png"
-                                                        alt="Frontend Development">
-                                                </figure>
-                                            </div>
-                                            <h3><a href="javascript:void(0)">Frontend Development</a></h3>
-                                            <div class="text">We provide solutions for all your frontend needs using
-                                                JavaScript universe.</div>
-                                        </div>
-                                    </div>
-                                    <!--Feature Block-->
-                                    <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
-                                        <div class="inner-box">
-                                            <div class="icon">
-                                                <figure class="image"><img src="images/icons/dev-ops-128-logo.png"
-                                                        alt="Dev-Ops Development">
-                                                </figure>
-                                            </div>
-                                            <h3><a href="service-detail.html">DevOps Development</a></h3>
-                                            <div class="text">We provide cloud based solutions using PaaS as well as
-                                                containerisation. </div>
-                                        </div>
-                                    </div>
-                                    <!--Feature Block-->
-                                    <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
-                                        <div class="inner-box">
-                                            <div class="icon">
-                                                <figure class="image"><img src="images/icons/mobility-128-logo.png"
-                                                        alt="Mobility">
-                                                </figure>
-                                            </div>
-                                            <h3><a href="service-detail.html">Mobility</a></h3>
-                                            <div class="text">We provide end to end solutions for mobility using Hybrid
-                                                Technologies for multi-platform support..</div>
-                                        </div>
-                                    </div>
-                                    <!--Feature Block-->
-                                    <!-- <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
-                                    <div class="inner-box">
-                                        <div class="icon"><figure class="image"><img src="images/icons/icon-16.png" alt=""></figure></div>
-                                        <h3><a href="service-detail.html">BlockChain</a></h3>
-                                        <div class="text">Keyword research & ranking sure every step of you SEO Campaign is taken care.</div>
-                                    </div>
-                                </div> -->
-                                    <!--Feature Block-->
-                                    <!-- <div class="feature-block-two col-md-6 col-sm-6 col-xs-12">
-                                    <div class="inner-box">
-                                        <div class="icon"><figure class="image"><img src="images/icons/icon-17.png" alt=""></figure></div>
-                                        <h3><a href="service-detail.html">AI/ML</a></h3>
-                                        <div class="text">Keyword research & ranking sure every step of you SEO Campaign is taken care.</div>
-                                    </div>
-                                </div> -->
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!--Specific Feature-->
-        <section class="specific-feature" id="solutions">
-            <div class="auto-container">
-                <div class="row clearfix">
-
-                    <!--Text Column-->
-                    <div class="text-column col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner">
-                            <h2>Backend Development</h2>
-                            <div class="text">We use various technologies like Redis/HazelCast for caching,
-                                MySQL/MongoDB to process data faster to solve challenging problems.</div>
-                            <div class="link-box"><a href="backend.html" class="theme-btn btn-style-four">See
-                                    More&nbsp;<i class="fa fa-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-
-                    <!--Image Column-->
-                    <div class="image-column col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner">
-                            <figure class="image"><a href="images/resource/backend-450-402.png" class="lightbox-image"
-                                    title="Image Caption Here"><img src="images/resource/backend-450-402.png"
-                                        alt="Backend Development"></a></figure>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!--Specific Feature-->
-        <section class="specific-feature bg-light">
-            <div class="auto-container">
-                <div class="row clearfix">
-
-                    <!--Text Column-->
-                    <div class="text-column pull-right col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner">
-                            <h2>Frontend Development</h2>
-                            <div class="text">We are well versed in developing simple web application using Bootstrap as
-                                well as sophistaces single page application using React and Redux.</div>
-                            <div class="link-box"><a href="frontend.html" class="theme-btn btn-style-four">See
-                                    More&nbsp;<i class="fa fa-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-
-                    <!--Image Column-->
-                    <div class="image-column pull-left col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner">
-                            <figure class="image"><a href="images/resource/frontend-450-402.png" class="lightbox-image"
-                                    title="Image Caption Here"><img src="images/resource/frontend-450-402.png"
-                                        alt="Frontend Development"></a></figure>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!--Specific Feature-->
-        <section class="specific-feature">
-            <div class="auto-container">
-                <div class="row clearfix">
-
-                    <!--Text Column-->
-                    <div class="text-column col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner">
-                            <h2>Dev-Ops Development</h2>
-                            <div class="text">We use various PaaS solutions like AWS, Microsoft Azure and Google Cloud
-                                as well containerised solutions using Docker and Kubernetes(K8S) to develop
-                                infrastructure for the applications.</div>
-                            <div class="link-box"><a href="dev-ops.html" class="theme-btn btn-style-four">See
-                                    More&nbsp;<i class="fa fa-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-
-                    <!--Image Column-->
-                    <div class="image-column col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner">
-                            <figure class="image"><a href="images/resource/dev-ops-450-402.png" class="lightbox-image"
-                                    title="Dev-Ops Development"><img src="images/resource/dev-ops-450-402.png"
-                                        alt="Dev-Ops Development"></a></figure>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!--Specific Feature-->
-        <section class="specific-feature bg-light">
-            <div class="auto-container">
-                <div class="row clearfix">
-
-                    <!--Text Column-->
-                    <div class="text-column pull-right col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner">
-                            <h2>Mobility</h2>
-                            <div class="text">We use hybrid technology using React Native to develop mobile applications
-                                for multiple platforms like Android and iOS.</div>
-                            <div class="link-box"><a href="mobility.html" class="theme-btn btn-style-four">See
-                                    More&nbsp;<i class="fa fa-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-
-                    <!--Image Column-->
-                    <div class="image-column pull-left col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner">
-                            <figure class="image"><a href="images/resource/mobility-450-402.png" class="lightbox-image"
-                                    title="Mobility"><img src="images/resource/mobility-450-402.png" alt="Mobility"></a>
-                            </figure>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!--Call To Action-->
-        <section class="call-to-action">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <!--Text Column-->
-                    <div class="text-column col-lg-7 col-md-12 col-sm-12 col-xs-12">
-                        <div class="inner">
-                            <h2>Feel Free to Contact Us</h2>
-                            <div class="text">Contact us to discuss more detailed solution for your requirements</div>
-                        </div>
-                    </div>
-
-                    <!--Links Column-->
-                    <div class="links-column col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                        <div class="inner">
-                            <a href="contact.html" class="theme-btn btn-style-four"><i
-                                    class="fa fa-envelope-o"></i>&nbsp;Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!--Footer Style Two-->
-        <footer class="footer-style-one">
-            <!--Footer Upper-->
-            <div class="footer-upper">
-                <div class="auto-container">
-                    <div class="row clearfix">
-                        <!--Big Column-->
-                        <div class="big-column col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                            <div class="footer-column">
-                                <div class="footer-widget about-widget">
-                                    <div class="widget-inner">
-                                        <div class="logo"><a href="index.html"><img src="images/Auflora-cropped.png"
-                                                    alt="Wizquest Labs"></a></div>
-                                        <div class="copyright">&copy; <script>document.write(new Date().getFullYear())</script>
-                                            All Rights Reserved</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Big Column-->
-                        <div class="big-column col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                            <div class="row clearfix">
-                                <!--Footer Column-->
-                                <div class="footer-column col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="footer-widget links-widget">
-                                        <div class="widget-inner">
-                                            <h3>Company</h3>
-                                            <div class="links">
-                                                <ul>
-                                                    <li><a href="about.html">About us</a></li>
-                                                    <li><a href="contact.html">Contact us </a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Footer Column-->
-                                <div class="footer-column col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="footer-widget links-widget">
-                                        <div class="widget-inner">
-                                            <h3>Resources</h3>
-                                            <div class="links">
-                                                <!-- <ul>
-                                                    <li><a href="https://medium.com/techcret" target="_blank">Blog</a>
-                                                    </li>
-                                                </ul> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Footer Column-->
-                                <div class="footer-column col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="footer-widget links-widget">
-                                        <div class="widget-inner">
-                                            <h3>Solutions</h3>
-                                            <div class="links">
-                                                <ul>
-                                                    <li><a href="backend.html">Backend Development</a></li>
-                                                    <li><a href="frontend.html">Frontend Development</a></li>
-                                                    <li><a href="dev-ops.html">Dev-Ops Development</a></li>
-                                                    <li><a href="mobility.html">Mobility</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Footer Column-->
-                                <div class="footer-column col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="footer-widget follow-widget">
-                                        <div class="widget-inner">
-                                            <h3>Follow</h3>
-                                            <div class="social-links">
-                                                <ul class="clearfix">
-                                                    <li><a href="#"
-                                                            target="_blank"><span class="fa  fa-facebook"></span></a>
-                                                    </li>
-                                                    <li><a href="#" target="_blank"><span
-                                                                class="fa  fa-twitter"></span></a></li>
-                                                    <li><a href="#"
-                                                            target="_blank"><span class="fa  fa-linkedin"></span></a>
-                                                    </li>
-                                                    <li><a href="#"
-                                                            target="_blank"><span class="fa  fa-reddit"></span></a></li>
-                                                    <li><a href="#" target="_blank"><span
-                                                                class="fa  fa-github"></span></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
-
-
+<!-- ═══ NAVBAR ═══ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="WizQuest Lab Home">Wiz<span>Quest</span> Lab</a>
+      <div class="nav-links" role="list">
+        <a href="#services" role="listitem">Services</a>
+        <a href="#ai" role="listitem">AI Solutions</a>
+        <a href="#integrations" role="listitem">Integrations</a>
+        <a href="#tech" role="listitem">Technologies</a>
+        <a href="#about" role="listitem">About</a>
+        <a href="#contact" class="btn btn-primary" role="listitem">Get in Touch</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <!--End pagewrapper-->
+  </div>
+</nav>
 
-    <!--Scroll to top-->
-    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
+<!-- ═══ MOBILE NAV ═══ -->
+<div class="mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#ai" onclick="closeMenu()">AI Solutions</a>
+  <a href="#integrations" onclick="closeMenu()">Integrations</a>
+  <a href="#tech" onclick="closeMenu()">Technologies</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#contact" class="btn btn-primary" onclick="closeMenu()">Get in Touch</a>
+</div>
 
+<!-- ═══ HERO ═══ -->
+<section id="hero" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Now offering AI / LLM development services
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          One Provider.<br />
+          <span class="gradient-text">All Services.</span>
+        </h1>
+        <p class="hero-sub">
+          WizQuest Lab is Delhi's premier IT services company delivering custom AI solutions, full-stack development, enterprise integrations, and cloud infrastructure — turning complex challenges into award-winning products.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary"><i class="fa fa-rocket"></i> Start a Project</a>
+          <a href="#services" class="btn btn-outline"><i class="fa fa-arrow-right"></i> Explore Services</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">50+</div>
+            <div class="hero-stat-label">Projects Delivered</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">30+</div>
+            <div class="hero-stat-label">Happy Clients</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">8+</div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">15+</div>
+            <div class="hero-stat-label">Technologies</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <span class="floating-tag tag-1"><i class="fa fa-robot"></i> AI / LLM</span>
+        <span class="floating-tag tag-2"><i class="fa fa-code"></i> Full-Stack</span>
+        <span class="floating-tag tag-3"><i class="fa fa-plug"></i> Integrations</span>
+        <div class="hero-card-grid">
+          <div class="hero-card">
+            <div class="hero-card-icon">🤖</div>
+            <div class="hero-card-title">AI & Machine Learning</div>
+            <div class="hero-card-sub">Custom chatbots · LLM apps · Computer vision · Predictive models</div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-icon">⚙️</div>
+            <div class="hero-card-title">Backend / API</div>
+            <div class="hero-card-sub">Java · Spring Boot · Microservices</div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-icon">🖥️</div>
+            <div class="hero-card-title">Frontend</div>
+            <div class="hero-card-sub">React · MERN · MEAN · Next.js</div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-icon">🔗</div>
+            <div class="hero-card-title">Integrations</div>
+            <div class="hero-card-sub">Zoho · Keka HR · SAP · ERP</div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-icon">☁️</div>
+            <div class="hero-card-title">Cloud & DevOps</div>
+            <div class="hero-card-sub">AWS · Azure · GCP · Kubernetes</div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-icon">📱</div>
+            <div class="hero-card-title">Mobile Apps</div>
+            <div class="hero-card-sub">React Native · iOS · Android</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/pagenav.js"></script>
-    <script src="js/jquery.scrollTo.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/owl.js"></script>
-    <script src="js/wow.js"></script>
+<!-- ═══ TRUST BAR ═══ -->
+<div id="trust" aria-hidden="true">
+  <div class="trust-inner">
+    <!-- repeated for seamless loop -->
+    <div class="trust-item"><i class="fa fa-check-circle"></i> AI Development</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Java / Spring Boot</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> MERN Stack</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> MEAN Stack</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> React / Next.js</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Keka HR Integration</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Zoho CRM Integration</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Zoho HR Integration</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> WordPress Development</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> AWS / Azure / GCP</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Kubernetes & Docker</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Custom LLMs</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Mobile Apps</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> System Integration</div>
+    <!-- duplicate for loop -->
+    <div class="trust-item"><i class="fa fa-check-circle"></i> AI Development</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Java / Spring Boot</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> MERN Stack</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> MEAN Stack</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> React / Next.js</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Keka HR Integration</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Zoho CRM Integration</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Zoho HR Integration</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> WordPress Development</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> AWS / Azure / GCP</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Kubernetes & Docker</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Custom LLMs</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Mobile Apps</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> System Integration</div>
+  </div>
+</div>
 
-    <script src="js/script.js"></script>
+<!-- ═══ SERVICES ═══ -->
+<section id="services" class="section-pad" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-head text-center fade-in">
+      <div class="label">What We Do</div>
+      <h2 class="section-title" id="services-title">Comprehensive IT Services<br />Under One Roof</h2>
+      <p class="section-sub">From AI-powered solutions to enterprise integrations — we bring deep technical expertise across the full technology spectrum.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in fade-in-delay-1" style="--accent-color: #00C8FF">
+        <div class="service-icon"><i class="fa fa-robot"></i></div>
+        <h3>AI & Machine Learning</h3>
+        <p>Build intelligent applications with custom LLMs, chatbots, computer vision, predictive analytics, and generative AI — tailored to your domain.</p>
+        <div class="service-tags">
+          <span class="stag">LLM / GPT</span><span class="stag">Chatbots</span><span class="stag">Computer Vision</span><span class="stag">NLP</span><span class="stag">Generative AI</span>
+        </div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-2" style="--accent-color: #7B5EA7">
+        <div class="service-icon" style="background:rgba(123,94,167,0.1);color:#7B5EA7"><i class="fa fa-server"></i></div>
+        <h3>Backend Development</h3>
+        <p>Robust, scalable backend systems using Java, Spring Boot, Microservices, and Node.js with battle-tested data layers and caching strategies.</p>
+        <div class="service-tags">
+          <span class="stag">Java</span><span class="stag">Spring Boot</span><span class="stag">Node.js</span><span class="stag">Microservices</span><span class="stag">REST / GraphQL</span>
+        </div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-3" style="--accent-color: #00FFB2">
+        <div class="service-icon" style="background:rgba(0,255,178,0.08);color:#00FFB2"><i class="fa fa-laptop-code"></i></div>
+        <h3>Frontend Development</h3>
+        <p>Stunning, performant UIs with React, Next.js, Angular, and Vue. MERN & MEAN stack expertise for full-stack JavaScript applications.</p>
+        <div class="service-tags">
+          <span class="stag">React</span><span class="stag">Next.js</span><span class="stag">MERN</span><span class="stag">MEAN</span><span class="stag">Angular</span><span class="stag">Vue</span>
+        </div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-1" style="--accent-color: #FF9500">
+        <div class="service-icon" style="background:rgba(255,149,0,0.08);color:#FF9500"><i class="fa fa-cloud"></i></div>
+        <h3>Cloud & DevOps</h3>
+        <p>Scalable cloud infrastructure on AWS, Azure, and GCP. CI/CD pipelines, containerisation with Docker, and orchestration using Kubernetes.</p>
+        <div class="service-tags">
+          <span class="stag">AWS</span><span class="stag">Azure</span><span class="stag">GCP</span><span class="stag">Docker</span><span class="stag">Kubernetes</span><span class="stag">CI/CD</span>
+        </div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-2" style="--accent-color: #FF5EA7">
+        <div class="service-icon" style="background:rgba(255,94,167,0.08);color:#FF5EA7"><i class="fa fa-mobile-alt"></i></div>
+        <h3>Mobile App Development</h3>
+        <p>Cross-platform mobile apps for Android and iOS using React Native — single codebase, native performance, delivered faster.</p>
+        <div class="service-tags">
+          <span class="stag">React Native</span><span class="stag">Android</span><span class="stag">iOS</span><span class="stag">PWA</span>
+        </div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-3" style="--accent-color: #4EA7FF">
+        <div class="service-icon" style="background:rgba(78,167,255,0.08);color:#4EA7FF"><i class="fa fa-plug"></i></div>
+        <h3>System & CRM Integration</h3>
+        <p>Seamless integration of third-party platforms — Keka HR, Zoho CRM, Zoho HR, SAP, Salesforce, and custom ERP systems.</p>
+        <div class="service-tags">
+          <span class="stag">Keka HR</span><span class="stag">Zoho CRM</span><span class="stag">Zoho HR</span><span class="stag">SAP</span><span class="stag">REST APIs</span>
+        </div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-1" style="--accent-color: #A0FF4E">
+        <div class="service-icon" style="background:rgba(160,255,78,0.08);color:#A0FF4E"><i class="fab fa-wordpress"></i></div>
+        <h3>WordPress Development</h3>
+        <p>Custom WordPress themes, plugins, WooCommerce stores, and high-performance optimised WordPress solutions for businesses of all sizes.</p>
+        <div class="service-tags">
+          <span class="stag">WordPress</span><span class="stag">WooCommerce</span><span class="stag">Custom Themes</span><span class="stag">Plugins</span>
+        </div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-2" style="--accent-color: #FFD700">
+        <div class="service-icon" style="background:rgba(255,215,0,0.08);color:#FFD700"><i class="fa fa-database"></i></div>
+        <h3>Database & Caching</h3>
+        <p>Performant data architectures using MySQL, MongoDB, Redis, Hazelcast, PostgreSQL, and cloud-native database solutions.</p>
+        <div class="service-tags">
+          <span class="stag">MySQL</span><span class="stag">MongoDB</span><span class="stag">Redis</span><span class="stag">PostgreSQL</span><span class="stag">Hazelcast</span>
+        </div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-3" style="--accent-color: #FF7B5E">
+        <div class="service-icon" style="background:rgba(255,123,94,0.08);color:#FF7B5E"><i class="fa fa-cogs"></i></div>
+        <h3>IT Consulting & Architecture</h3>
+        <p>Technology advisory, system architecture design, code reviews, performance audits, and digital transformation consulting.</p>
+        <div class="service-tags">
+          <span class="stag">Architecture</span><span class="stag">Consulting</span><span class="stag">Audits</span><span class="stag">Digital Transformation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147714055-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+<!-- ═══ AI SERVICES ═══ -->
+<section id="ai" class="section-pad" aria-labelledby="ai-title">
+  <div class="container">
+    <div class="ai-grid">
+      <div>
+        <div class="label fade-in">AI & Intelligent Solutions</div>
+        <h2 class="section-title fade-in fade-in-delay-1" id="ai-title">From Chatbots to<br /><span class="gradient-text">Custom AI Models</span></h2>
+        <p class="section-sub fade-in fade-in-delay-2">We help businesses harness the power of Artificial Intelligence — from deploying intelligent chatbots to building proprietary large language models and integrating AI across your entire product ecosystem.</p>
+        <div class="ai-feature-list">
+          <div class="ai-feat fade-in fade-in-delay-1">
+            <div class="ai-feat-icon"><i class="fa fa-comments"></i></div>
+            <div>
+              <h4>Intelligent Chatbots & Virtual Assistants</h4>
+              <p>Custom AI chatbots for customer support, lead generation, internal HR, and sales — trained on your business data and deployed on any platform.</p>
+            </div>
+          </div>
+          <div class="ai-feat fade-in fade-in-delay-2">
+            <div class="ai-feat-icon"><i class="fa fa-brain"></i></div>
+            <div>
+              <h4>Custom LLM Development & Fine-Tuning</h4>
+              <p>Build or fine-tune large language models (GPT, LLaMA, Mistral) on your proprietary datasets for domain-specific intelligence.</p>
+            </div>
+          </div>
+          <div class="ai-feat fade-in fade-in-delay-3">
+            <div class="ai-feat-icon"><i class="fa fa-network-wired"></i></div>
+            <div>
+              <h4>AI Across Multiple Domains</h4>
+              <p>Healthcare, fintech, HR-tech, e-commerce, education, manufacturing — we deploy AI solutions tailored to your industry's specific challenges.</p>
+            </div>
+          </div>
+          <div class="ai-feat fade-in fade-in-delay-4">
+            <div class="ai-feat-icon"><i class="fa fa-chart-line"></i></div>
+            <div>
+              <h4>Predictive Analytics & ML Pipelines</h4>
+              <p>End-to-end ML pipelines for forecasting, anomaly detection, recommendation engines, and data-driven decision making at scale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ai-cards-right fade-in fade-in-delay-2">
+        <div class="ai-big-card">
+          <h3>🚀 Generative AI Solutions</h3>
+          <p>Leverage the latest in Generative AI — from RAG-based knowledge bases and AI copilots to image generation pipelines and multimodal applications. We architect, develop, and deploy production-ready GenAI systems that deliver real business value.</p>
+        </div>
+        <div class="ai-mini-grid">
+          <div class="ai-mini">
+            <div class="ai-mini-icon">🔍</div>
+            <h4>RAG & Knowledge Bases</h4>
+            <p>Retrieval-augmented generation on your documents and data.</p>
+          </div>
+          <div class="ai-mini">
+            <div class="ai-mini-icon">🤝</div>
+            <h4>AI Agent Workflows</h4>
+            <p>Autonomous AI agents for complex multi-step business processes.</p>
+          </div>
+          <div class="ai-mini">
+            <div class="ai-mini-icon">👁️</div>
+            <h4>Computer Vision</h4>
+            <p>Image classification, object detection, OCR & document AI.</p>
+          </div>
+          <div class="ai-mini">
+            <div class="ai-mini-icon">🗣️</div>
+            <h4>NLP & Sentiment</h4>
+            <p>Text analysis, sentiment detection, entity recognition.</p>
+          </div>
+          <div class="ai-mini">
+            <div class="ai-mini-icon">🎯</div>
+            <h4>AI Recommendations</h4>
+            <p>Personalised recommendation engines for e-commerce & content.</p>
+          </div>
+          <div class="ai-mini">
+            <div class="ai-mini-icon">📊</div>
+            <h4>AI Dashboards</h4>
+            <p>Real-time AI-powered analytics dashboards and reporting tools.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        gtag('config', 'UA-147714055-1');
-    </script>
+<!-- ═══ TECHNOLOGIES ═══ -->
+<section id="tech" class="section-pad" aria-labelledby="tech-title">
+  <div class="container">
+    <div class="section-head text-center fade-in">
+      <div class="label">Technology Stack</div>
+      <h2 class="section-title" id="tech-title">Deep Expertise Across<br />Every Layer of the Stack</h2>
+      <p class="section-sub">From AI frameworks to cloud infrastructure — our engineers are certified experts in the technologies that power modern software.</p>
+    </div>
+    <div class="tech-tabs fade-in fade-in-delay-1">
+      <button class="tech-tab active" data-panel="backend">Backend</button>
+      <button class="tech-tab" data-panel="frontend">Frontend</button>
+      <button class="tech-tab" data-panel="ai-ml">AI / ML</button>
+      <button class="tech-tab" data-panel="cloud">Cloud & DevOps</button>
+      <button class="tech-tab" data-panel="database">Databases</button>
+      <button class="tech-tab" data-panel="cms">CMS & eCommerce</button>
+    </div>
+    <div class="tech-panel active fade-in fade-in-delay-2" id="panel-backend">
+      <div class="tech-item"><i class="fab fa-java"></i><div><div class="tech-name">Java</div><div class="tech-category">Backend</div></div></div>
+      <div class="tech-item"><i class="fa fa-leaf"></i><div><div class="tech-name">Spring Boot</div><div class="tech-category">Framework</div></div></div>
+      <div class="tech-item"><i class="fa fa-cloud"></i><div><div class="tech-name">Spring Cloud</div><div class="tech-category">Microservices</div></div></div>
+      <div class="tech-item"><i class="fab fa-node-js"></i><div><div class="tech-name">Node.js</div><div class="tech-category">Runtime</div></div></div>
+      <div class="tech-item"><i class="fa fa-code"></i><div><div class="tech-name">Kotlin / Groovy</div><div class="tech-category">JVM Languages</div></div></div>
+      <div class="tech-item"><i class="fa fa-project-diagram"></i><div><div class="tech-name">Micronaut</div><div class="tech-category">Framework</div></div></div>
+      <div class="tech-item"><i class="fa fa-exchange-alt"></i><div><div class="tech-name">REST / GraphQL</div><div class="tech-category">API Design</div></div></div>
+      <div class="tech-item"><i class="fa fa-stream"></i><div><div class="tech-name">Apache Kafka</div><div class="tech-category">Messaging</div></div></div>
+    </div>
+    <div class="tech-panel" id="panel-frontend">
+      <div class="tech-item"><i class="fab fa-react"></i><div><div class="tech-name">React.js</div><div class="tech-category">UI Library</div></div></div>
+      <div class="tech-item"><i class="fa fa-bolt"></i><div><div class="tech-name">Next.js</div><div class="tech-category">React Framework</div></div></div>
+      <div class="tech-item"><i class="fab fa-angular"></i><div><div class="tech-name">Angular</div><div class="tech-category">Frontend Framework</div></div></div>
+      <div class="tech-item"><i class="fab fa-vuejs"></i><div><div class="tech-name">Vue.js</div><div class="tech-category">Frontend Framework</div></div></div>
+      <div class="tech-item"><i class="fab fa-js"></i><div><div class="tech-name">TypeScript</div><div class="tech-category">Language</div></div></div>
+      <div class="tech-item"><i class="fab fa-css3-alt"></i><div><div class="tech-name">Tailwind CSS</div><div class="tech-category">Styling</div></div></div>
+      <div class="tech-item"><i class="fab fa-bootstrap"></i><div><div class="tech-name">Bootstrap</div><div class="tech-category">UI Framework</div></div></div>
+      <div class="tech-item"><i class="fab fa-react"></i><div><div class="tech-name">Redux / Zustand</div><div class="tech-category">State Management</div></div></div>
+    </div>
+    <div class="tech-panel" id="panel-ai-ml">
+      <div class="tech-item"><i class="fa fa-brain"></i><div><div class="tech-name">OpenAI / GPT-4</div><div class="tech-category">LLM</div></div></div>
+      <div class="tech-item"><i class="fa fa-robot"></i><div><div class="tech-name">LangChain</div><div class="tech-category">AI Framework</div></div></div>
+      <div class="tech-item"><i class="fab fa-python"></i><div><div class="tech-name">Python</div><div class="tech-category">AI Language</div></div></div>
+      <div class="tech-item"><i class="fa fa-fire"></i><div><div class="tech-name">PyTorch / TensorFlow</div><div class="tech-category">ML Framework</div></div></div>
+      <div class="tech-item"><i class="fa fa-search"></i><div><div class="tech-name">RAG / Vector DBs</div><div class="tech-category">Retrieval AI</div></div></div>
+      <div class="tech-item"><i class="fa fa-comments"></i><div><div class="tech-name">LLaMA / Mistral</div><div class="tech-category">Open-Source LLM</div></div></div>
+      <div class="tech-item"><i class="fa fa-eye"></i><div><div class="tech-name">Computer Vision</div><div class="tech-category">OpenCV / YOLO</div></div></div>
+      <div class="tech-item"><i class="fa fa-chart-bar"></i><div><div class="tech-name">scikit-learn</div><div class="tech-category">ML Library</div></div></div>
+    </div>
+    <div class="tech-panel" id="panel-cloud">
+      <div class="tech-item"><i class="fab fa-aws"></i><div><div class="tech-name">AWS</div><div class="tech-category">Cloud Platform</div></div></div>
+      <div class="tech-item"><i class="fab fa-microsoft"></i><div><div class="tech-name">Azure</div><div class="tech-category">Cloud Platform</div></div></div>
+      <div class="tech-item"><i class="fab fa-google"></i><div><div class="tech-name">Google Cloud</div><div class="tech-category">Cloud Platform</div></div></div>
+      <div class="tech-item"><i class="fab fa-docker"></i><div><div class="tech-name">Docker</div><div class="tech-category">Containerisation</div></div></div>
+      <div class="tech-item"><i class="fa fa-dharmachakra"></i><div><div class="tech-name">Kubernetes</div><div class="tech-category">Orchestration</div></div></div>
+      <div class="tech-item"><i class="fab fa-jenkins"></i><div><div class="tech-name">Jenkins / GitHub Actions</div><div class="tech-category">CI/CD</div></div></div>
+      <div class="tech-item"><i class="fa fa-code-branch"></i><div><div class="tech-name">Terraform</div><div class="tech-category">IaC</div></div></div>
+      <div class="tech-item"><i class="fa fa-chart-line"></i><div><div class="tech-name">Prometheus / Grafana</div><div class="tech-category">Monitoring</div></div></div>
+    </div>
+    <div class="tech-panel" id="panel-database">
+      <div class="tech-item"><i class="fa fa-database"></i><div><div class="tech-name">MySQL</div><div class="tech-category">Relational DB</div></div></div>
+      <div class="tech-item"><i class="fa fa-database"></i><div><div class="tech-name">PostgreSQL</div><div class="tech-category">Relational DB</div></div></div>
+      <div class="tech-item"><i class="fa fa-leaf"></i><div><div class="tech-name">MongoDB</div><div class="tech-category">NoSQL</div></div></div>
+      <div class="tech-item"><i class="fa fa-memory"></i><div><div class="tech-name">Redis</div><div class="tech-category">Cache / KV Store</div></div></div>
+      <div class="tech-item"><i class="fa fa-bolt"></i><div><div class="tech-name">Hazelcast</div><div class="tech-category">In-Memory Grid</div></div></div>
+      <div class="tech-item"><i class="fa fa-search"></i><div><div class="tech-name">Elasticsearch</div><div class="tech-category">Search Engine</div></div></div>
+      <div class="tech-item"><i class="fa fa-project-diagram"></i><div><div class="tech-name">Pinecone / Weaviate</div><div class="tech-category">Vector Database</div></div></div>
+      <div class="tech-item"><i class="fa fa-stream"></i><div><div class="tech-name">RabbitMQ / Kafka</div><div class="tech-category">Message Queue</div></div></div>
+    </div>
+    <div class="tech-panel" id="panel-cms">
+      <div class="tech-item"><i class="fab fa-wordpress"></i><div><div class="tech-name">WordPress</div><div class="tech-category">CMS</div></div></div>
+      <div class="tech-item"><i class="fa fa-shopping-cart"></i><div><div class="tech-name">WooCommerce</div><div class="tech-category">eCommerce</div></div></div>
+      <div class="tech-item"><i class="fa fa-store"></i><div><div class="tech-name">Shopify</div><div class="tech-category">eCommerce</div></div></div>
+      <div class="tech-item"><i class="fab fa-magento"></i><div><div class="tech-name">Magento</div><div class="tech-category">eCommerce</div></div></div>
+      <div class="tech-item"><i class="fa fa-pencil-alt"></i><div><div class="tech-name">Strapi / Contentful</div><div class="tech-category">Headless CMS</div></div></div>
+      <div class="tech-item"><i class="fab fa-elementor"></i><div><div class="tech-name">Elementor</div><div class="tech-category">Page Builder</div></div></div>
+      <div class="tech-item"><i class="fa fa-search-plus"></i><div><div class="tech-name">SEO Optimisation</div><div class="tech-category">WordPress SEO</div></div></div>
+      <div class="tech-item"><i class="fa fa-shield-alt"></i><div><div class="tech-name">Security Hardening</div><div class="tech-category">WordPress Security</div></div></div>
+    </div>
+  </div>
+</section>
 
+<!-- ═══ INTEGRATIONS ═══ -->
+<section id="integrations" class="section-pad" aria-labelledby="integrations-title">
+  <div class="container">
+    <div class="integrations-intro">
+      <div class="fade-in">
+        <div class="label">Enterprise Integrations</div>
+        <h2 class="section-title" id="integrations-title">Connect Every Tool<br />in Your Business</h2>
+        <p class="section-sub">We specialise in complex enterprise system integrations — making your business software talk to each other seamlessly. No more data silos, no more manual exports.</p>
+        <a href="#contact" class="btn btn-primary" style="margin-top:28px"><i class="fa fa-plug"></i> Discuss an Integration</a>
+      </div>
+      <div class="fade-in fade-in-delay-2">
+        <div class="integration-grid">
+          <div class="int-card">
+            <div class="int-logo"><i class="fa fa-users-cog"></i></div>
+            <h4>Keka HR Integration</h4>
+            <p>Sync employee data, payroll, attendance, and leaves with Keka HR across all your business tools.</p>
+            <span class="int-badge">Popular</span>
+          </div>
+          <div class="int-card">
+            <div class="int-logo"><i class="fa fa-handshake"></i></div>
+            <h4>Zoho CRM Integration</h4>
+            <p>Bidirectional Zoho CRM sync with your website, ERP, marketing tools, and custom workflows.</p>
+            <span class="int-badge">Popular</span>
+          </div>
+          <div class="int-card">
+            <div class="int-logo"><i class="fa fa-id-card"></i></div>
+            <h4>Zoho HR Integration</h4>
+            <p>Automate HR workflows with Zoho People — onboarding, appraisals, leaves, and more.</p>
+            <span class="int-badge">Popular</span>
+          </div>
+          <div class="int-card">
+            <div class="int-logo" style="background:rgba(0,200,255,0.08);color:var(--accent);border-color:rgba(0,200,255,0.2)"><i class="fa fa-building"></i></div>
+            <h4>SAP Integration</h4>
+            <p>Custom connectors to SAP ERP, SAP S/4HANA, and SAP SuccessFactors for enterprise data flows.</p>
+          </div>
+          <div class="int-card">
+            <div class="int-logo" style="background:rgba(0,200,255,0.08);color:var(--accent);border-color:rgba(0,200,255,0.2)"><i class="fab fa-salesforce"></i></div>
+            <h4>Salesforce Integration</h4>
+            <p>Connect Salesforce with your tech stack for unified customer data and automated pipelines.</p>
+          </div>
+          <div class="int-card">
+            <div class="int-logo" style="background:rgba(0,255,178,0.08);color:var(--accent3);border-color:rgba(0,255,178,0.2)"><i class="fa fa-cog"></i></div>
+            <h4>Custom API Integrations</h4>
+            <p>Any two systems connected — payment gateways, logistics APIs, communication platforms, and more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROCESS ═══ -->
+<section id="process" class="section-pad" aria-labelledby="process-title">
+  <div class="container">
+    <div class="section-head text-center fade-in">
+      <div class="label">How We Work</div>
+      <h2 class="section-title" id="process-title">Our Proven Delivery Process</h2>
+      <p class="section-sub">A structured, transparent approach that keeps you informed and confident at every stage — from first call to final deployment.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step fade-in fade-in-delay-1">
+        <div class="step-num">01</div>
+        <h4>Discovery</h4>
+        <p>Deep-dive into your requirements, goals, and technical landscape to craft the perfect strategy.</p>
+      </div>
+      <div class="process-step fade-in fade-in-delay-2">
+        <div class="step-num">02</div>
+        <h4>Architecture</h4>
+        <p>Design scalable, future-proof system architecture with the right technology choices.</p>
+      </div>
+      <div class="process-step fade-in fade-in-delay-3">
+        <div class="step-num">03</div>
+        <h4>Development</h4>
+        <p>Agile sprints with regular demos, code reviews, and continuous integration throughout.</p>
+      </div>
+      <div class="process-step fade-in fade-in-delay-4">
+        <div class="step-num">04</div>
+        <h4>Testing & QA</h4>
+        <p>Rigorous automated and manual testing to ensure quality, performance, and security.</p>
+      </div>
+      <div class="process-step fade-in fade-in-delay-5">
+        <div class="step-num">05</div>
+        <h4>Launch & Support</h4>
+        <p>Smooth deployment, monitoring setup, and ongoing maintenance and support packages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHY US ═══ -->
+<section id="about" class="section-pad" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section-head text-center fade-in">
+      <div class="label">Why WizQuest Lab</div>
+      <h2 class="section-title" id="why-title">Built on Trust, Delivered<br />with Excellence</h2>
+      <p class="section-sub">We're not just developers — we're technology partners committed to your long-term success.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-in fade-in-delay-1">
+        <div class="why-num">8+</div>
+        <h4>Years in the Industry</h4>
+        <p>Over eight years of delivering complex software solutions across multiple domains including fintech, healthcare, e-commerce, and enterprise.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-2">
+        <div class="why-num">50+</div>
+        <h4>Successful Projects</h4>
+        <p>From MVPs for startups to large-scale enterprise systems — our track record speaks for itself across India and globally.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-3">
+        <div class="why-num">100%</div>
+        <h4>Transparent Communication</h4>
+        <p>Weekly progress updates, dedicated project managers, and full source code ownership — no black boxes, ever.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-1">
+        <div class="why-num">AI</div>
+        <h4>Future-Ready Technology</h4>
+        <p>Early adopters of AI and modern frameworks — we ensure your technology stays ahead of the curve, not behind it.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-2">
+        <div class="why-num">24/7</div>
+        <h4>Support & Maintenance</h4>
+        <p>Post-launch support, monitoring, bug fixes, and feature enhancements — we're with you for the long haul.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-3">
+        <div class="why-num">₹</div>
+        <h4>Competitive Pricing</h4>
+        <p>World-class technology expertise at India-competitive rates. Maximum value for your investment, every time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section id="testimonials" class="section-pad" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div class="section-head text-center fade-in">
+      <div class="label">Client Stories</div>
+      <h2 class="section-title" id="testimonials-title">What Our Clients Say</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-in fade-in-delay-1">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"WizQuest Lab built us a custom AI chatbot integrated with our Zoho CRM. The bot handles 60% of our customer queries automatically. The team was professional, communicative, and delivered on time."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RS</div>
+          <div>
+            <div class="testi-name">Rajesh Sharma</div>
+            <div class="testi-role">CTO, EdTech Startup, Delhi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-in fade-in-delay-2">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The Keka HR integration with our custom ERP was complex, but WizQuest delivered it flawlessly. Data now flows automatically across all systems. Saved us 20+ hours per week in manual work."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">PM</div>
+          <div>
+            <div class="testi-name">Priya Mehta</div>
+            <div class="testi-role">VP Operations, Manufacturing Company</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-in fade-in-delay-3">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"We hired WizQuest for our MERN stack e-commerce platform. They rebuilt the entire backend with Spring Boot, improved API response times by 5x, and added a recommendation engine using ML. Outstanding work."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AK</div>
+          <div>
+            <div class="testi-name">Amit Kumar</div>
+            <div class="testi-role">Founder, D2C E-commerce Brand</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA BANNER ═══ -->
+<section id="cta-banner" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-inner fade-in">
+      <div class="label">Get Started Today</div>
+      <h2 id="cta-title">Ready to Build Something<br /><span class="gradient-text">Extraordinary?</span></h2>
+      <p>Whether you need an AI-powered chatbot, a full-stack web application, or a complex enterprise integration — we have the expertise to make it happen.</p>
+      <div class="cta-actions">
+        <a href="#contact" class="btn btn-primary"><i class="fa fa-rocket"></i> Start Your Project</a>
+        <a href="mailto:contact@wizquest.io" class="btn btn-outline"><i class="fa fa-envelope"></i> contact@wizquest.io</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="section-pad" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-head text-center fade-in">
+      <div class="label">Contact Us</div>
+      <h2 class="section-title" id="contact-title">Let's Talk About<br />Your Next Project</h2>
+      <p class="section-sub">Drop us a message and we'll get back to you within 24 hours. No obligation, just a conversation about how we can help.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info fade-in fade-in-delay-1">
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Our Location</h4>
+            <p>Kraków, Poland.</p>
+            <p>Delhi, India</p>
+            <p>Serving clients across US, UK, Asia, Europe &amp; globally</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa fa-envelope"></i></div>
+          <div>
+            <h4>Email Us</h4>
+            <a href="mailto:contact@wizquest.io">contact@wizquest.io</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa fa-clock"></i></div>
+          <div>
+            <h4>Business Hours</h4>
+            <p>Monday – Friday: 9:00 AM – 7:00 PM IST</p>
+            <p>Saturday: 10:00 AM – 4:00 PM IST</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa fa-globe"></i></div>
+          <div>
+            <h4>We Work Globally</h4>
+            <p>Remote-first team comfortable working across time zones — US, UK, Australia, Singapore &amp; more.</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap fade-in fade-in-delay-2">
+        <h3 style="font-size:1.3rem;color:var(--white);margin-bottom:24px;font-family:var(--font-head)">Send Us an Enquiry</h3>
+        <!-- Formspree: register at formspree.io with contact@wizquest.io and replace YOUR_FORM_ID below -->
+        <form id="contactForm" action="https://formspree.io/f/xpqkdnlr" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New Enquiry from WizQuest.io" />
+          <input type="hidden" name="_replyto" id="replyto" value="" />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name *</label>
+              <input type="text" id="fname" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address *</label>
+              <input type="email" id="femail" name="email" placeholder="john@company.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fphone">Phone Number</label>
+              <input type="tel" id="fphone" name="phone" placeholder="+91 98765 43210" />
+            </div>
+            <div class="form-group">
+              <label for="fcompany">Company Name</label>
+              <input type="text" id="fcompany" name="company" placeholder="Your Company" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fservice">Service Interested In *</label>
+            <select id="fservice" name="service" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option>AI / LLM Development</option>
+              <option>Custom Chatbot Development</option>
+              <option>Backend Development (Java / Spring Boot / Node.js)</option>
+              <option>Frontend Development (React / MERN / MEAN)</option>
+              <option>Mobile App Development (React Native)</option>
+              <option>Cloud &amp; DevOps (AWS / Azure / GCP / K8s)</option>
+              <option>Keka HR Integration</option>
+              <option>Zoho CRM Integration</option>
+              <option>Zoho HR Integration</option>
+              <option>WordPress / WooCommerce Development</option>
+              <option>Custom System / API Integration</option>
+              <option>IT Consulting &amp; Architecture</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fbudget">Estimated Budget</label>
+            <select id="fbudget" name="budget">
+              <option value="" disabled selected>Select budget range...</option>
+              <option>Under $10,000</option>
+              <option>$10k - $20k</option>
+              <option>$20k to 50k</option>
+              <option>$50k+ / Enterprise</option>
+              <option>To be discussed</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Tell Us About Your Project *</label>
+            <textarea id="fmessage" name="message" placeholder="Briefly describe what you need — the more detail, the better we can help..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+            <i class="fa fa-paper-plane"></i> Send Enquiry
+          </button>
+          <div class="form-message" id="formMessage"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="nav-logo">Wiz<span>Quest</span> Lab</span>
+        <p>Delhi's premier IT services company — delivering custom AI solutions, full-stack development, enterprise integrations, and cloud infrastructure that power real business growth.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#ai">AI Development</a></li>
+          <li><a href="#services">Backend Development</a></li>
+          <li><a href="#services">Frontend / MERN</a></li>
+          <li><a href="#services">Mobile Apps</a></li>
+          <li><a href="#services">Cloud &amp; DevOps</a></li>
+          <li><a href="#services">WordPress</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Integrations</h5>
+        <ul>
+          <li><a href="#integrations">Keka HR Integration</a></li>
+          <li><a href="#integrations">Zoho CRM Integration</a></li>
+          <li><a href="#integrations">Zoho HR Integration</a></li>
+          <li><a href="#integrations">SAP Integration</a></li>
+          <li><a href="#integrations">Salesforce Integration</a></li>
+          <li><a href="#integrations">Custom API Integration</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#testimonials">Client Stories</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="mailto:contact@wizquest.io">contact@wizquest.io</a></li>
+          <li><a href="#contact">Delhi, India</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> WizQuest Lab. All rights reserved. | Delhi, India</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Scroll to top"><i class="fa fa-arrow-up"></i></button>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
+  });
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    const open = mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  function closeMenu() {
+    mobileNav.classList.remove('open'); hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', false); document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.tech-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tech-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tech-panel').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('panel-' + tab.dataset.panel).classList.add('active');
+    });
+  });
+  document.getElementById('scrollTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.1 }).observe || document.querySelectorAll('.fade-in').forEach(el => {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    obs.observe(el);
+  });
+  // run IntersectionObserver properly
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const form = document.getElementById('contactForm');
+  const msgBox = document.getElementById('formMessage');
+  const submitBtn = document.getElementById('submitBtn');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    document.getElementById('replyto').value = document.getElementById('femail').value;
+    let valid = true;
+    form.querySelectorAll('[required]').forEach(f => {
+      f.style.borderColor = !f.value.trim() ? '#FF5050' : '';
+      if (!f.value.trim()) valid = false;
+    });
+    if (!valid) { showMsg('error', 'Please fill in all required fields.'); return; }
+    submitBtn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Sending...';
+    submitBtn.disabled = true;
+    try {
+      const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+      if (res.ok) {
+        showMsg('success', 'Thank you! Your enquiry has been sent. We will get back to you within 24 hours.');
+        form.reset();
+        submitBtn.innerHTML = '<i class="fa fa-check"></i> Sent!';
+        setTimeout(() => { submitBtn.innerHTML = '<i class="fa fa-paper-plane"></i> Send Enquiry'; submitBtn.disabled = false; }, 4000);
+      } else {
+        showMsg('error', 'Something went wrong. Please email us directly at contact@wizquest.io');
+        submitBtn.innerHTML = '<i class="fa fa-paper-plane"></i> Send Enquiry'; submitBtn.disabled = false;
+      }
+    } catch { 
+      showMsg('error', 'Network error. Please email us at contact@wizquest.io');
+      submitBtn.innerHTML = '<i class="fa fa-paper-plane"></i> Send Enquiry'; submitBtn.disabled = false;
+    }
+  });
+  function showMsg(type, text) {
+    msgBox.className = 'form-message ' + type; msgBox.textContent = text; msgBox.style.display = 'block';
+    msgBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const t = document.querySelector(link.getAttribute('href'));
+      if (t) { e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' }); }
+    });
+  });
+</script>
 </body>
-
 </html>
